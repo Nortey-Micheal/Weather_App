@@ -1,0 +1,137 @@
+:root{
+    --white: #ffffff;
+    --dark: #005c80;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+ul,a{
+    list-style-type: none;
+    text-decoration: none;
+    color: var(--white);
+}
+
+body {
+    background-image: url(./images/darkWeather.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100dvh;
+    width: 100dvw;
+    color: var(--white);
+}
+
+header{
+    font-size: min(calc(10px + 1.4vw),18px);
+    font-weight: 600;
+}
+
+.container {
+   width: min(90%,1100px); 
+    margin: 0 auto;
+}
+
+header>div{
+    
+    height: 7vh;
+   
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header>div>div{
+    flex-grow: 1;
+}
+
+nav{
+    width: 70%;
+}
+
+nav>ul{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+main{
+    text-align: center;
+    margin-top: 7dvh;
+}
+
+.heading{
+    margin-bottom: 7vh;
+}
+
+.searchingArea{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    backdrop-filter: blur(50px);
+    padding: 25px;
+}
+
+.searchingArea>div>p{
+    /* color: var(-); */
+    font-size: min(max(5vw,15px),25px);
+    font-weight: 600;
+}
+
+input{
+    color: var(--white);
+    width: min(400px,60%);
+    font-size: min(max(2.2vw,15px),17px);
+    font-weight: 600;
+    padding: 4px;
+    background-color: rgba(1, 8, 48, 0.418);
+}
+
+button{
+    background-color: var(--dark);
+    color: var(--white);
+    font-size: min(max(2.2vw,15px),17px);
+    font-weight: 600;
+    padding: 4px 10px;
+    border-radius: 7px;
+    border: 1px solid var(--dark);
+}
+
+.condition{
+    backdrop-filter: blur(50px);
+    padding: 25px;backdrop-filter: blur(50px);
+    padding: 25px;
+    height: 50vh;
+    font-size: min(max(5vw,15px),25px);
+    font-weight: 600;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+footer{
+    width: 100dvw;
+    height: 100dvh;
+    position: fixed;
+    top: 1px;
+    background-color: rgba(1, 8, 48, 0.418);
+    display: none;
+}
+
+footer>div{
+    height: 100%;
+}
+
+footer>div>div{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer img {
+    width: 30dvw;
+    height: 30dvh;
+}
